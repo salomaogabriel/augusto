@@ -1,0 +1,73 @@
+:root {
+  --background: #cfe4dd;
+  --blue-color: #577aa0;
+  --white: #e9f3f0;
+  --light-browm: #b19b89;
+}
+body {
+  background-color: var(--background);
+}
+header,
+nav {
+  font-family: "Poppins", sans-serif;
+  margin: auto;
+  width: 50%;
+  align-items: center;
+  margin-top: 15px;
+}
+
+header h2,
+h1 {
+  width: fit-content;
+  margin: auto;
+}
+header h2 {
+  color: var(--blue-color);
+  font-size: 28px;
+}
+header h1 {
+  color: var(--white);
+  background-color: var(--light-browm);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+  font-size: 36px;
+  border-radius: 12px;
+  border: 2px dashed #dad2cc;
+}
+.header-h1 {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: var(--light-browm);
+  width: 100%;
+  border-radius: 12px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  background-color: var(--blue-color);
+  padding: 12px;
+  justify-content: center;
+}
+.nav {
+  background-color: transparent;
+  border: 0;
+  color: var(--white);
+  width: auto;
+  font-size: 28px;
+  border-right: 2px solid var(--white);
+  padding: 10px 30px;
+}
+.nav:hover {
+  background-color: rgba(238, 246, 247, 0.1);
+  cursor: pointer;
+}
+.nav:nth-of-type(1) {
+  border-radius: 12px 0px 0px 12px;
+}
+.nav:last-of-type {
+  border-radius: 0px 12px 12px 0px;
+  border-right: none;
+}
