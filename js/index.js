@@ -47,7 +47,45 @@ fetch("products.json")
       <img src="product/${res[i].id}.jpg" alt="${res[i].name}" />
       <h2>${res[i].name}</h2>
       <h3>R$${res[i].price},00</h3>
-      <button onclick="createRipple(event)">Presentear</button>
+      <button onclick="createRipple(event); openModal(${res[i].id},'${res[i].name}',${res[i].price});">Presentear</button>
     </div>`;
     }
   });
+
+var modal = document.getElementById("payment");
+
+// Get the button that opens the modal
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// Modal html elementes:
+let modal_qr_code = document.getElementById("qr-imgcode-img");
+let modal_picture = document.getElementById("modal-picture");
+let modal_name = document.getElementById("modal-name");
+let modal_price = document.getElementById("modal-price");
+// When the user clicks the button, open the modal
+function openModal(id, name, price) {
+  if (id != 99) {
+    modal_picture.src = `product/${id}.jpg`;
+    modal_price.innerHTML = `R$${price},00`;
+  } else {
+    modal_picture.src = `product/${id}.png`;
+    modal_price.innerHTML = `R$xx,xx`;
+  }
+  modal_name.innerHTML = name;
+
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};

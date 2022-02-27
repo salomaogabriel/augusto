@@ -14,9 +14,27 @@
     <title>Augusto - Chá de Bebê</title>
   </head>
   <body>
-    <div class="circle-expand"></div>
-
     <div class="body">
+      <div id="payment" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1>Presentear com o Pix</h1>
+          <h2 id="modal-name">Name</h2>
+          <img src="product/0.jpg" alt="Produto" id="modal-picture" />
+          <h3 id="modal-price">R$40,00</h3>
+          <img src="product_qr/0.png" alt="Qr Code" id="qr-imgcode-img" />
+          <h4>Ou</h4>
+          <div class="copiar">
+            <p>example@example.com</p>
+            <button
+              onclick=" navigator.clipboard.writeText('example@example.com');"
+            >
+              Copiar Email
+            </button>
+          </div>
+        </div>
+      </div>
       <header>
         <h2>Chá de Bebê</h2>
         <div class="header-h1">
@@ -55,8 +73,20 @@
     </div>
     <article id="lista" class="hide">
       <h1>Lista de Presentes</h1>
-      <div id="cards"></div>
+      <div id="cards">
+        <div class="card">
+          <img src="product/99.png" alt="Qualquer quantidade" />
+          <h2>Quantidade Customizada</h2>
+          <h3>R$xx,xx</h3>
+          <button
+            onclick="createRipple(event); openModal(99,'Quantidade Customizada',0);"
+          >
+            Presentear
+          </button>
+        </div>
+      </div>
     </article>
+
     <script src="js/index.js"></script>
   </body>
 </html>
