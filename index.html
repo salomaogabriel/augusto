@@ -14,6 +14,8 @@
     <title>Augusto - Chá de Bebê</title>
   </head>
   <body>
+    <div id="copied" class="alert hide">Chave Copiada!</div>
+    <!-- 33 toda quinta -->
     <div class="body">
       <div id="payment" class="modal">
         <!-- Modal content -->
@@ -21,16 +23,13 @@
           <span class="close">&times;</span>
           <h1>Presentear com o Pix</h1>
           <h2 id="modal-name">Name</h2>
-          <img src="product/0.jpg" alt="Produto" id="modal-picture" />
           <h3 id="modal-price">R$40,00</h3>
           <img src="product_qr/0.png" alt="Qr Code" id="qr-imgcode-img" />
           <h4>Ou</h4>
           <div class="copiar">
             <p>example@example.com</p>
-            <button
-              onclick=" navigator.clipboard.writeText('example@example.com');"
-            >
-              Copiar Email
+            <button onclick="  copyKey(event);" class="tooltip" id="copy-btn">
+              Copiar chave
             </button>
           </div>
         </div>

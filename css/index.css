@@ -30,12 +30,14 @@ h1 {
   margin: auto;
 }
 header h2,
-article h2 {
+article h2,
+.modal-content h2 {
   color: var(--blue-color);
   font-size: 28px;
 }
 article h2,
-article h3 {
+article h3,
+.modal-content h2 {
   font-family: "Roboto", sans-serif;
   text-align: center;
   font-weight: 400;
@@ -79,7 +81,8 @@ nav {
 }
 .nav,
 #ver-lista,
-.card button {
+.card button,
+.copiar button {
   position: relative;
   overflow: hidden;
   transition: 400ms;
@@ -185,7 +188,8 @@ article {
   color: var(--blue-color);
   font-weight: bold;
 }
-.card button {
+.card button,
+.copiar button {
   background-color: var(--light-browm);
   color: var(--white);
   padding: 8px;
@@ -196,7 +200,8 @@ article {
   transition: 200ms;
   width: 100%;
 }
-.card button:hover {
+.card button:hover,
+.copiar button:hover {
   color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -219,14 +224,21 @@ article {
   position: relative;
   background-color: #fefefe;
   margin: auto;
-  padding: 0;
+  padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 40%;
+  border-radius: 12px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
   animation-duration: 0.4s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-content img {
+  width: 40%;
 }
 
 /* Add Animation */
@@ -266,4 +278,39 @@ article {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+.modal-content h1 {
+  color: var(--blue-color);
+}
+.copiar {
+  display: flex;
+  align-items: center;
+}
+.copiar button {
+  margin-left: 10px;
+}
+#copied {
+  background-color: rgb(76, 175, 80);
+}
+.animation {
+  animation-name: fadeAway;
+  animation-duration: 4s;
+}
+@keyframes fadeAway {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.alert {
+  position: fixed;
+  padding: 20px;
+  color: white;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+  z-index: 99;
 }

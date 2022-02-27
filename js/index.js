@@ -67,10 +67,8 @@ let modal_price = document.getElementById("modal-price");
 // When the user clicks the button, open the modal
 function openModal(id, name, price) {
   if (id != 99) {
-    modal_picture.src = `product/${id}.jpg`;
     modal_price.innerHTML = `R$${price},00`;
   } else {
-    modal_picture.src = `product/${id}.png`;
     modal_price.innerHTML = `R$xx,xx`;
   }
   modal_name.innerHTML = name;
@@ -89,3 +87,13 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+function copyKey(event) {
+  navigator.clipboard.writeText("example@example.com");
+  createRipple(event);
+  document.getElementById("copied").classList.remove("hide");
+  document.getElementById("copied").classList.add("animation");
+  setTimeout(() => {
+    document.getElementById("copied").classList.remove("animation");
+    document.getElementById("copied").classList.add("hide");
+  }, 4000);
+}
