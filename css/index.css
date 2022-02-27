@@ -328,3 +328,9 @@ header h4 {
   border-radius: 12px;
   z-index: 99;
 }
+.copiar p {
+  background-color: #f0f0f0;
+  padding: 4px;
+  border-radius: 4px;
+  color: black;
+}
