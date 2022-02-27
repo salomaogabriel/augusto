@@ -14,16 +14,56 @@
     <title>Augusto - Chá de Bebê</title>
   </head>
   <body>
-    <header>
-      <h2>Chá de Bebê</h2>
-      <div class="header-h1">
-        <h1>Augusto</h1>
+    <div class="body">
+      <header>
+        <h2>Chá de Bebê</h2>
+        <div class="header-h1">
+          <h1>Augusto</h1>
+        </div>
+      </header>
+      <nav>
+        <button class="nav" onclick="changePage('inicio')">Início</button>
+        <button class="nav" onclick="changePage('lista')">
+          Lista de Presentes
+        </button>
+        <button class="nav" onclick="changePage('augusto')">Augusto</button>
+      </nav>
+      <article id="inicio">
+        <img
+          src="assets/default_background.jpg"
+          alt="default_background"
+          id="big-bg"
+        />
+        <h2><b>Olá. Seja bem vindo!</b></h2>
+        <h3>
+          Olá queridos amigos e familiares! Esse site é um espaço criado com
+          todo carinho para compartilhar com vocês todos os detalhes dessa fase
+          preciosa que é a espera do <b>Augusto</b>.<br /><br />
+
+          Aqui vocês também poderão nos presentear de forma prática e segura.
+          Basta clicar no link “Lista de Presentes” e escolher o presente que
+          desejar. Não se esqueçam de deixar um recadinho no Mural. 😉
+        </h3>
+        <button id="ver-lista">Ver Lista de Presentes</button>
+      </article>
+
+      <article id="augusto"></article>
+    </div>
+    <article id="lista">
+      <h1>Lista de Presentes</h1>
+      <div id="cards">
+        <div class="card">
+          <img src="product/0.jpg" alt="Pacote 50 unidades" />
+          <h2>Pacote 50 unidades P</h2>
+          <h3>R$40,00</h3>
+          <button>Presentear</button>
+        </div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
       </div>
-    </header>
-    <nav>
-      <button class="nav">Home</button>
-      <button class="nav">Lista de Presentes</button>
-      <button class="nav">Augusto</button>
-    </nav>
+    </article>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
