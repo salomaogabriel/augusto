@@ -265,17 +265,21 @@ article {
 }
 
 /* The Close Button */
+.close-div {
+  width: 100%;
+}
 .close {
-  color: white;
-  float: right;
+  color: var(--blue-color);
   font-size: 28px;
+  float: right;
   font-weight: bold;
   transition: 200ms;
+  margin-right: 20px;
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: #21364d;
   text-decoration: none;
   cursor: pointer;
 }
@@ -290,7 +294,7 @@ article {
   margin-left: 10px;
 }
 #copied {
-  background-color: rgb(76, 175, 80);
+  background-color: var(--blue-color);
 }
 .animation {
   animation-name: fadeAway;
