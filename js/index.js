@@ -97,3 +97,11 @@ function copyKey(event) {
     document.getElementById("copied").classList.add("hide");
   }, 4000);
 }
+function updateWeek() {
+  let weeks = weeksBetween(new Date(), new Date(2021, 6, 8));
+  document.getElementById("weeks").innerHTML = `${weeks} Semanas!`;
+}
+function weeksBetween(d2, d1) {
+  return Math.floor((d2 - d1) / (7 * 24 * 60 * 60 * 1000));
+}
+updateWeek();
