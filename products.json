@@ -1,8 +1,73 @@
 [
-  { "id": 0, "name": "TEST", "price": 100 },
+  { "id": 0, "name": "Pacote 50 unidades P", "price": 40 },
   {
     "id": 1,
-    "name": "Forreal",
-    "price": 45
+    "name": "Kit 4 lenços umedecidos",
+    "price": 40
+  },
+  {
+    "id": 2,
+    "name": "Pacote 64 unidades M ",
+    "price": 50
+  },
+  {
+    "id": 3,
+    "name": "Kit hora do banho",
+    "price": 60
+  },
+  {
+    "id": 4,
+    "name": "Kit 3 pacotes com 18 unidades RN",
+    "price": 65
+  },
+  {
+    "id": 5,
+    "name": "Toalha fralda branca",
+    "price": 70
+  },
+  {
+    "id": 6,
+    "name": "Kit 2 pacotes com 48 unidades M",
+    "price": 80
+  },
+  {
+    "id": 7,
+    "name": "Kit 10 lenços umedecidos ",
+    "price": 95
+  },
+  {
+    "id": 8,
+    "name": "Porta bebê branco",
+    "price": 100
+  },
+  {
+    "id": 9,
+    "name": "Kit 2 pacotes com 48 unidades XG",
+    "price": 105
+  },
+  {
+    "id": 10,
+    "name": "Kit 4 pacotes com 48 unidades M",
+    "price": 125
+  },
+  {
+    "id": 11,
+    "name": "Kit 3 pacotes com 52 unidades XG",
+    "price": 160
+  },
+  {
+    "id": 12,
+    "name": "Trocador branco 200 fios",
+    "price": 200
+  },
+  {
+    "id": 13,
+    "name": "Kit 4 pacotes com 60 unidades G",
+    "price": 205
+  },
+  {
+    "id": 14,
+    "name": "Kit 5 pacotes com 60 unidades XG",
+    "price": 280
   }
 ]
