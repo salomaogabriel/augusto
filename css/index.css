@@ -4,7 +4,10 @@
   --white: #e9f3f0;
   --light-browm: #b19b89;
 }
+
 body {
+  overflow-x: hidden;
+
   background-color: var(--background);
 }
 #payment {

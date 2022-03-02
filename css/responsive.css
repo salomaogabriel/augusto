@@ -40,6 +40,19 @@
   .card h2 {
     font-size: 16px;
   }
+  .copiar p {
+    display: none;
+    background-color: transparent;
+    color: transparent;
+    width: 0;
+    height: 0;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .modal-content {
+    width: 70%;
+  }
 }
 @media only screen and (max-width: 450px) {
   header h1 {
