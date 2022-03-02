@@ -126,6 +126,7 @@ function copyKey(event) {
 function updateWeek() {
   let weeks = weeksBetween(new Date(), new Date(2021, 6, 8));
   document.getElementById("weeks").innerHTML = `${weeks} Semanas!`;
+  document.getElementById("week-text").innerHTML = weeks;
 }
 function weeksBetween(d2, d1) {
   return Math.floor((d2 - d1) / (7 * 24 * 60 * 60 * 1000));
