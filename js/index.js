@@ -88,8 +88,9 @@ window.onclick = function (event) {
   }
 };
 function copyKey(event) {
-  navigator.clipboard.writeText("example@example.com");
   createRipple(event);
+
+  navigator.clipboard.writeText("example@example.com");
   document.getElementById("copied").classList.remove("hide");
   document.getElementById("copied").classList.add("animation");
   setTimeout(() => {
