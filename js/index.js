@@ -1,9 +1,32 @@
 let articles = document.getElementsByTagName("article");
-function changePage(id) {
+let page_is_home = true;
+let menu = document.getElementsByClassName("menu-nav")[0];
+function changePage(id, isResponsive = false) {
   for (let i = 0; i < articles.length; i++) {
     articles[i].classList.add("hide");
   }
-  document.getElementById(id).classList.remove("hide");
+  if (!isResponsive) {
+    document.getElementById(id).classList.remove("hide");
+    if (id == "inicio") {
+      menu.innerHTML = "Lista de Presentes";
+      page_is_home = true;
+    } else {
+      menu.innerHTML = "Início";
+
+      page_is_home = false;
+    }
+  } else {
+    if (page_is_home) {
+      document.getElementById("lista").classList.remove("hide");
+      page_is_home = false;
+      menu.innerHTML = "Início";
+    } else {
+      menu.innerHTML = "Lista de Presentes";
+
+      document.getElementById("inicio").classList.remove("hide");
+      page_is_home = true;
+    }
+  }
 }
 let navs = document.getElementsByClassName("nav");
 for (let i = 0; i < navs.length; i++) {
