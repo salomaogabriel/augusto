@@ -79,10 +79,27 @@ nav {
   padding: 10px 30px;
   transition: 200ms;
 }
+.menu {
+  background-color: transparent;
+  color: transparent;
+  box-shadow: none;
+  visibility: hidden;
+  position: absolute;
+}
+.menu-nav {
+  background-color: transparent;
+  border: 0;
+  color: var(--white);
+  width: auto;
+  font-size: 28px;
+  padding: 10px 30px;
+  transition: 200ms;
+}
 .nav,
 #ver-lista,
 .card button,
-.copiar button {
+.copiar button,
+.menu-nav button {
   position: relative;
   overflow: hidden;
   transition: 400ms;

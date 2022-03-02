@@ -46,12 +46,15 @@
           <h1>Augusto</h1>
         </div>
       </header>
-      <nav>
+      <nav class="full-menu">
         <button class="nav" onclick="changePage('inicio')">Início</button>
         <button class="nav" onclick="changePage('lista')">
           Lista de Presentes
         </button>
         <button class="nav" onclick="changePage('augusto')">Augusto</button>
+      </nav>
+      <nav class="menu">
+        <button class="menu-nav" onclick="alert('gotcha')">Menu</button>
       </nav>
       <article id="inicio">
         <img
@@ -81,8 +84,10 @@
       <div id="cards">
         <div class="card">
           <img src="product/99.png" alt="Qualquer quantidade" />
-          <h2>Quantidade Customizada</h2>
-          <h3>R$xx,xx</h3>
+          <div class="info">
+            <h2>Quantidade Customizada</h2>
+            <h3>R$xx,xx</h3>
+          </div>
           <button
             onclick="createRipple(event); openModal(99,'Quantidade Customizada',0);"
           >

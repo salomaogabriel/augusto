@@ -45,8 +45,10 @@ fetch("products.json")
     for (let i = 0; i < res.length; i++) {
       cards.innerHTML += `<div class="card">
       <img src="product/${res[i].id}.jpg" alt="${res[i].name}" />
+      <div class="info">
       <h2>${res[i].name}</h2>
       <h3>R$${res[i].price},00</h3>
+      </div>
       <button onclick="createRipple(event); openModal(${res[i].id},'${res[i].name}',${res[i].price});">Presentear</button>
     </div>`;
     }

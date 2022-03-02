@@ -41,3 +41,63 @@
     font-size: 16px;
   }
 }
+@media only screen and (max-width: 450px) {
+  header h1 {
+    font-size: 24px;
+    padding: 5px 0px;
+  }
+  .full-menu {
+    background-color: transparent;
+    color: transparent;
+    box-shadow: none;
+    visibility: hidden;
+    position: absolute;
+  }
+  .menu {
+    color: var(--white);
+    position: initial;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    visibility: visible;
+    background-color: var(--blue-color);
+    font-size: 24px;
+  }
+  #cards {
+    grid-template-columns: 100%;
+    column-gap: 0%;
+
+    row-gap: 1%;
+  }
+  .card {
+    flex-direction: row;
+    padding: 10px;
+  }
+  .info {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .card img {
+    width: 60px;
+  }
+  .card h2 {
+    width: 130px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+    font-size: 12px;
+    overflow: hidden;
+  }
+  .card h3 {
+    padding-left: 10px;
+    text-align: left;
+    margin-top: 5px;
+  }
+  .card button {
+    width: fit-content;
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .card img {
+    width: 40px;
+  }
+}
